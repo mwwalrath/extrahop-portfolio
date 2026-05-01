@@ -2,8 +2,7 @@
 ###############################################################################################################################
   Trigger:      VLAN Down Detector
   Version:      5.1.0
-  Author:       Mike Saur (ExtraHop Networks)
-  Contributor:  Matthew Walrath (ExtraHop Networks)
+  Author:       Matthew Walrath (ExtraHop Networks)
   Events:       TIMER_30SEC, REMOTE_RESPONSE, METRIC_RECORD_COMMIT
   Assignment:   Global events only
 
