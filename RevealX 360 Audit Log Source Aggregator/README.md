@@ -3,7 +3,7 @@
 A small Python tool for scoping a [RevealX 360 Allow List](https://docs.extrahop.com/current/rx360-setup-admin/#configure-an-allow-list)
 from real activity data.
 
-[![tests](https://github.com/mwwalrath/ExtraHop/rx360-auditlog-sources/actions/workflows/test.yml/badge.svg)](https://github.com/mwwalrath/ExtraHop/rx360-auditlog-sources/actions/workflows/test.yml)
+[![tests](https://github.com/mwwalrath/ExtraHop/blob/main/RevealX%20360%20Audit%20Log%20Source%20Aggregator/test.yml/badge.svg)](https://github.com/mwwalrath/ExtraHop/blob/main/RevealX%20360%20Audit%20Log%20Source%20Aggregator/test.yml)
 [![license](https://img.shields.io/badge/license-BSD--2--Clause-blue.svg)](LICENSE)
 [![python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org)
 
