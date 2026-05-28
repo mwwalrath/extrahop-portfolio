@@ -29,4 +29,4 @@ BSD 2-Clause. See [LICENSE](LICENSE).
 ## Contact
 
 - LinkedIn: [linkedin.com/in/mwwalrath-solutionsarchitect/](https://www.linkedin.com/in/mwwalrath-solutionsarchitect/)
-- Email: [m.w.walrath@example.com](mailto:m.w.walrath@example.com)
+- Email: [m.w.walrath@gmail.com](mailto:m.w.walrath@gmail.com)
