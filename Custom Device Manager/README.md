@@ -1,5 +1,7 @@
 # ExtraHop Custom Device Manager
 
+[![tests](https://github.com/mwwalrath/extrahop-portfolio/actions/workflows/custom-device-manager-tests.yml/badge.svg)](https://github.com/mwwalrath/extrahop-portfolio/actions/workflows/custom-device-manager-tests.yml)
+
 ## Overview
 
 This script manages **ExtraHop Custom Devices** by interacting with the ExtraHop REST API. It enables auditing, retrieving device metrics, searching, creating, patching, and deleting custom devices using data from CSV files.
