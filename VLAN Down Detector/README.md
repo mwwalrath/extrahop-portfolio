@@ -227,7 +227,54 @@ Items considered and deferred. These solve real problems but either require cust
 - **Risk score scaling per tier.** Critical VLAN outages would ramp to max risk score faster than low-value outages. Only relevant when `DETECTION_CATEGORY = 'security'`. Limited audience until more customers adopt security mode.
 - **Detection batching for burst events.** When a switch fails and many VLANs drop simultaneously, consolidating into a single "multi-VLAN outage" detection would reduce alert fatigue. Requires customer input on burst threshold and consolidation format.
 - **Configurable detection title and description templates.** Lets customers match their own ticketing format. Speculative until a customer requests it.
-| 5.1.0 | Renamed `LICENSE_MODEL` to `DETECTION_CATEGORY` ('performance'/'security'). Detection name suffix `_NDR` -> `_Security`. Removed title suffix. Code consolidation: 3 tier functions -> 1 (`resolveTier`). 2 fire functions -> 1 with `recovered` flag. Removed unused `STANDARD_VLAN_IDS`. Simplified `logMsg` signature. Hardening: try/catch on `sessionSet`, `Number()` coercion in `resolveTier`. 22% line reduction (592 -> 478). |
+
+---
+
+## Changelog
+
+### 5.1.0
+
+Renamed `LICENSE_MODEL` to `DETECTION_CATEGORY` (`'performance'`/`'security'`). Detection name suffix `_NDR` → `_Security`. Removed title suffix. Code consolidation: 3 tier functions → 1 (`resolveTier`). 2 fire functions → 1 with `recovered` flag. Removed unused `STANDARD_VLAN_IDS`. Simplified `logMsg` signature. Hardening: try/catch on `sessionSet`, `Number()` coercion in `resolveTier`. 22% line reduction (592 → 478).
+
+### 5.0.0
+
+Tiered monitoring (critical, standard, low_value). Per-tier thresholds and refire intervals. Recovery detection with downtime. Human-readable duration formatting. TTL notes in descriptions. Critical VLANs bypass discovery.
+
+### 4.1.0
+
+Pipe-delimited MRC hot path. Zero JSON on `METRIC_RECORD_COMMIT`. Down counter expiry refresh.
+
+### 4.0.0
+
+Major simplification: 736 → 446 lines. Removed `apiCall` abstraction. Pre-computed `CFG_RANK`.
+
+### 3.3.x
+
+Functions at top. `Session.increment` for counters. Markdown descriptions. 127-character width.
+
+### 3.2.0
+
+Throttled discovery. Zero-packet filtering. Graduated risk scoring. VLAN exclusion.
+
+### 3.1.0
+
+Cold-start guard. Hierarchical log levels. Recovery logging. Configurable refire.
+
+### 3.0.0
+
+Full rewrite. Bug fixes. Hardened session handling. Improved logging.
+
+### 2.1.0
+
+Performance enhancements.
+
+### 2.0.0
+
+Dynamic VLAN discovery via REST API.
+
+### 1.0.0
+
+Initial deployment.
 
 ---
 
