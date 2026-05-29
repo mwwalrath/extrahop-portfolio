@@ -81,4 +81,4 @@ Fields added by the trigger (ExtraHop auto-populates `_time`, `clientAddr`, `ser
 
 ## License
 
-MIT
+BSD 2-Clause License. See [LICENSE](../LICENSE).
