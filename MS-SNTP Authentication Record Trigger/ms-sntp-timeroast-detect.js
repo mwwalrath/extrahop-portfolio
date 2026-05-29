@@ -2,8 +2,9 @@
 //  MS-SNTP Authentication Record Trigger
 //  Version 4.0
 //
-//  Author:  Matthew Walrath
-//  License: MIT
+//  Author:     Matthew Walrath
+//  Copyright:  (c) 2026, Matthew Walrath
+//  License:    BSD 2-Clause (see LICENSE)
 // ============================================================================================================================
 //
 //  Extracts MS-SNTP authentication trailers from NTP client requests to Domain Controllers and commits
