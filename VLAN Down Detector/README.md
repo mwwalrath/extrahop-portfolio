@@ -230,3 +230,7 @@ Items considered and deferred. These solve real problems but either require cust
 | 5.1.0 | Renamed `LICENSE_MODEL` to `DETECTION_CATEGORY` ('performance'/'security'). Detection name suffix `_NDR` -> `_Security`. Removed title suffix. Code consolidation: 3 tier functions -> 1 (`resolveTier`). 2 fire functions -> 1 with `recovered` flag. Removed unused `STANDARD_VLAN_IDS`. Simplified `logMsg` signature. Hardening: try/catch on `sessionSet`, `Number()` coercion in `resolveTier`. 22% line reduction (592 -> 478). |
 
 ---
+
+## License
+
+BSD 2-Clause License. See [LICENSE](../LICENSE).
