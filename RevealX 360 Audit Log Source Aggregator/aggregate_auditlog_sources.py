@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2026, ExtraHop Networks. All rights reserved.
+# Copyright (c) 2026, Matthew Walrath. All rights reserved.
 # Licensed under the BSD 2-Clause License. See LICENSE for details.
 """
 aggregate_auditlog_sources.py
