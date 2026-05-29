@@ -28,5 +28,5 @@ BSD 2-Clause. See [LICENSE](LICENSE).
 
 ## Contact
 
-- LinkedIn: [linkedin.com/in/YOUR-HANDLE](https://www.linkedin.com/in/YOUR-HANDLE)
-- Email: [YOUR-EMAIL@example.com](mailto:YOUR-EMAIL@example.com)
+- LinkedIn: [linkedin.com/in/mwwalrath-solutionsarchitect/](https://www.linkedin.com/in/mwwalrath-solutionsarchitect/)
+- Email: [m.w.walrath@gmail.com](mailto:m.w.walrath@gmail.com)
