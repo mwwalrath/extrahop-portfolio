@@ -289,3 +289,7 @@ No ExtraHop appliance is needed to run the tests.
 ## Disclaimer
 
 This script is provided as-is with no warranty. Please test it in a non-production environment before running on live systems. Use `--dry-run` to preview changes before committing them.
+
+## License
+
+BSD 2-Clause License. See [LICENSE](../LICENSE).
