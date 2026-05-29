@@ -4,12 +4,12 @@ on:
   push:
     branches: [main]
     paths:
-      - "Custom Device Manager/**"
+      - "custom-device-manager/**"
       - ".github/workflows/custom-device-manager-tests.yml"
   pull_request:
     branches: [main]
     paths:
-      - "Custom Device Manager/**"
+      - "custom-device-manager/**"
       - ".github/workflows/custom-device-manager-tests.yml"
   workflow_dispatch:
 
@@ -27,14 +27,14 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
-          cache-dependency-path: "Custom Device Manager/requirements-dev.txt"
+          cache-dependency-path: "custom-device-manager/requirements-dev.txt"
 
       - name: Install dependencies
-        working-directory: "Custom Device Manager"
+        working-directory: "custom-device-manager"
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements-dev.txt
 
       - name: Run tests
-        working-directory: "Custom Device Manager"
+        working-directory: "custom-device-manager"
         run: pytest -v
