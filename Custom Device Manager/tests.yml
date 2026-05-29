@@ -26,11 +26,14 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: "Custom Device Manager/requirements-dev.txt"
 
-      - name: Install pytest
+      - name: Install dependencies
+        working-directory: "Custom Device Manager"
         run: |
           python -m pip install --upgrade pip
-          pip install pytest
+          pip install -r requirements-dev.txt
 
       - name: Run tests
         working-directory: "Custom Device Manager"
