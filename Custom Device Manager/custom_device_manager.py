@@ -1,3 +1,18 @@
+#!/usr/bin/env python3
+# Copyright (c) 2026, Matthew Walrath. All rights reserved.
+# Licensed under the BSD 2-Clause License. See LICENSE for details.
+"""
+custom_device_manager.py
+
+Bulk audit, create, patch, and delete of ExtraHop custom devices via the
+REST API. Reads CSV input for device definitions and appliance
+credentials. Supports dry-run preview, three patch modes (replace,
+append, remove), and automatic reconnection across multiple appliances.
+
+Version: 1.0
+Author:  Matthew Walrath
+"""
+
 import argparse
 from datetime import datetime
 import csv
