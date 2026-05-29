@@ -1,6 +1,7 @@
 # ExtraHop Custom Device Manager
 
 [![tests](https://github.com/mwwalrath/extrahop-portfolio/actions/workflows/custom-device-manager-tests.yml/badge.svg)](https://github.com/mwwalrath/extrahop-portfolio/actions/workflows/custom-device-manager-tests.yml)
+[![python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org)
 
 ## Overview
 
@@ -24,14 +25,14 @@ The script logs detailed information about operations, with robust error-handlin
 
 ## Requirements
 
-- Python 3.6+
+- Python 3.10+
 - ExtraHop REST API access
 - ExtraHop API key for authentication
 
 ## Setup
 
 1. Clone this repository or copy the script into a new `.py` file.
-2. No external dependencies are required. The script uses only Python standard library modules.
+2. The script has no runtime dependencies beyond the Python standard library. Running the test suite requires `pytest` (see [Testing](#testing)).
 3. Ensure your environment has access to the ExtraHop appliance with the necessary API permissions.
 
 ## Logging
@@ -280,10 +281,11 @@ python custom_device_manager.py --appliances appliances.csv --audit --no-verify-
 
 ## Testing
 
-The project includes unit tests for the core parsing and matching logic. Run them with:
+The project includes unit tests for the core parsing and matching logic. Install dependencies and run:
 
 ```sh
-python -m pytest test_custom_device_manager.py -v
+pip install -r requirements-dev.txt
+pytest -v
 ```
 
 No ExtraHop appliance is needed to run the tests.
