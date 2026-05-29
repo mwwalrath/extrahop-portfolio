@@ -1,3 +1,5 @@
+# Copyright (c) 2026, Matthew Walrath. All rights reserved.
+# Licensed under the BSD 2-Clause License. See LICENSE for details.
 """
 Unit tests for custom_device_manager pure functions.
 
